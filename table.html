@@ -34,20 +34,11 @@
         <div class="card-header bg-dark text-light text-center">
             Current Reservations
         </div>
-        <table class="table table-hover table-bordered table-striped">
-        <thead style="font-size: 14px;">
-            <tr>
-            <th scope="col">#</th>
-            <th scope="col">UNIQUE ID</th>
-            </tr>
-        </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Nick</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="card-body">
+            <p><span id="idSomethingAutoIncremental">1</span>|<span id="unique-id">123</span></p>
+            
+          
+      </div>
     </div>
     
     <br>
@@ -56,24 +47,36 @@
         <div class="card-header bg-dark text-light text-center">
             Waitlist
         </div>
-        <table class="table table-hover table-bordered table-striped">
-        <thead style="font-size: 14px;">
-            <tr>
-            <th scope="col">#</th>
-            <th scope="col">UNIQUE ID</th>
-            </tr>
-        </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Also Nick</td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="card-body">
+            <p><span id="idSomethingAutoIncremental">1</span>|<span id="unique-id">555</span></p>
+        </div>
+        
     </div>
 
-</div>
+  </div>
+  
+  <script type="text/javascript">
 
+      $.get("/api/reservation/" + reservationSomethingINotSure, function(data) {
+        console.log(data);
+        if (data) {
+          $("#reservation").show();
+          $("#unique-input").text(data.somethignIdontknowyet);
+        }
+        
+      });
+
+    $.get("/api/waitlist/" + waitlistSomethingINotSure, function(data) {
+    console.log(data);
+    if (data) {
+        $("#stats").show();
+        $("#unique-input").text(data.somethignIdontknowyet);
+    }
+   
+    });
+  </script>
+
+</body>
 
 
 </html>
