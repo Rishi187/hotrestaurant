@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hot Tables</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+
+<div class="container">
+
+
+    <div class="jumbotron" style="background-color: #343a40; color: white;"; background-size: 100%; color: white;">
+    <h1 class="text-center"><i class="fab fa-gripfire"></i>Hot Restaurant</h1>
+        <h3 class="text-center">We have <span id="tables-left">very few</span> tables. Book a reservation before they're all gone.</h3>
+        <hr>
+        <div class="mx-auto" style="width: 20em; padding-left: 2em">
+        <button href="/reserve" class="btn btn-danger btn-lg"><i class="fas fa-credit-card"></i> Reserve tables</button>
+        <button href="#" class="btn btn-light btn-lg"><i class="fas fa-home"></i></button>
+        </div> 
+    </div>
+
+
+  
+    <div class="card">
+        <div class="card-header bg-dark text-light text-center">
+            Current Reservations
+        </div>
+        <table class="table table-hover table-bordered table-striped">
+        <thead style="font-size: 14px;">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">UNIQUE ID</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Nick</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <br>
+    
+    <div class="card">
+        <div class="card-header bg-dark text-light text-center">
+            Waitlist
+        </div>
+        <table class="table table-hover table-bordered table-striped">
+        <thead style="font-size: 14px;">
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">UNIQUE ID</th>
+            </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Also Nick</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+
+</html>
